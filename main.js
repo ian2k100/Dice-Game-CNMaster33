@@ -6,12 +6,20 @@ init();
 document.querySelector(".btn-roll").addEventListener("click", function() {
   if (gamePlaying) {
     // 1. Random number
-    let dice = Math.floor(Math.random() * 6) + 1;
+    let dice = Math.floor((Math.random() * 6) + 1);
+
+    
 
     // 2. Display the result
     let diceDOM = document.querySelector(".dice");
     diceDOM.style.display = "block";
-    diceDOM.src = "dice-" + dice + ".png";
+    // diceDOM.src = "dice-" + dice + ".png";
+    for (var i = 1; i <= 6; i++){
+      diceDOM.classList.remove('show-' + i);
+      if (dice === i ){
+        diceDOM.classList.add('show-' + i);
+      }
+    }
 
     // 3. Update the round score IF the rolled number was NOT a 1
     if (dice !== 1) {
