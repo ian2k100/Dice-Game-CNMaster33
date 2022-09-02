@@ -14,9 +14,9 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
     let diceDOM = document.querySelector(".dice");
     diceDOM.style.display = "block";
     // diceDOM.src = "dice-" + dice + ".png";
-    for (var i = 1; i <= 6; i++){
+    for (let i = 1; i <= 6; i++){
       diceDOM.classList.remove('show-' + i);
-      if (dice === i ){
+      if (dice === i ) {
         diceDOM.classList.add('show-' + i);
       }
     }

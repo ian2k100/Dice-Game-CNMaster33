@@ -167,7 +167,7 @@
 
   .dice {
     position:fixed;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     transform-style: preserve-3d;
     height: 100px;
@@ -200,8 +200,8 @@
   .side:nth-child(1) {
     transform: translateZ(3.1em); }
 
-  .side:nth-child(2) {
-    transform: rotateY(-180deg) translateZ(3.1em); }
+  .side:nth-child(6) {
+    transform: rotateY(90deg) translateZ(3.1em); }
   
   .side:nth-child(3) {
     transform: rotateY(-90deg) translateZ(3.1em); }
@@ -212,8 +212,8 @@
   .side:nth-child(5) {
     transform: rotateX(-90deg) translateZ(3.1em); }
   
-  .side:nth-child(6) {
-    transform: rotateY(90deg) translateZ(3.1em); }
+  .side:nth-child(2) {
+    transform: rotateY(-180deg) translateZ(3.1em); }
   
   .two-1, .three-1, .four-1, .five-1, .six-1 {
     top: 20%;
@@ -247,8 +247,8 @@
   .show-1 {
     transform: rotateX(720deg) rotateZ(-720deg); }
 
-  .show-2 {
-    transform: rotateX(450deg) rotateZ(-720deg); }
+  .show-6 {
+    transform: rotateX(-900deg) rotateZ(1080deg); }
 
   .show-3 {
     transform: rotateY(-450deg) rotateZ(-1440deg); }
@@ -259,7 +259,7 @@
   .show-5 {
     transform: rotateX(-810deg) rotateZ(-1080deg); }
 
-  .show-6 {
-    transform: rotateX(-900deg) rotateZ(1080deg); }
+  .show-2 {
+    transform: rotateX(450deg) rotateZ(-720deg); }
   
   
